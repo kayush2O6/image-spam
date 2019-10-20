@@ -1,2 +1,3 @@
 predict/static/uploads/
 .ipynb_checkpoints/
+predict/__pycache__
