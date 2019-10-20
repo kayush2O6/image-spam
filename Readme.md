@@ -35,7 +35,11 @@ Clone the repo and cd into predict folder
 ```
 cd predict
 
-pip install -r requirements.txt
+pip3 install -r requirements.txt
+
+python3.6 app.py 
+
+[http://localhost:5000/spam_buster/api/v1/model](http://localhost:5000/spam_buster/api/v1/model)
 ```
 
 #### Run within docker
@@ -45,11 +49,17 @@ Clone the repo and cd into predict folder
 Run the image and bash into it to start the server
 
 ```
-docker run --rm -itd --name hack -v /home/mayur/hack/image-spam/predict:/predict -p 5000:5000 kayush206/img_spam:v2 bash
+docker run --rm -itd \
+ --name spam_buster \
+ -v image-spam/predict:/predict 
+ -p 5000:5000 
+ kayush206/img_spam:v2 bash
 
 cd /predict
 
-python3 app.py
+python3.6 app.py
+
+[http://localhost:5000/spam_buster/api/v1/model](http://localhost:5000/spam_buster/api/v1/model)
 ```
 
 ---
@@ -58,4 +68,4 @@ Members
 
 * [Mayur Madnani](https://github.com/mayurmadnani)
 * [Ayush Kumar](https://github.com/AK-ayush)
-* [Shweta Pandey]
+* [Shweta Pandey](https://github.com/bomila) 

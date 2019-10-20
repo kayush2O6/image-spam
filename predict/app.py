@@ -16,6 +16,12 @@ import tensorflow as tf
 #from keras.preprocessing.image import load_img
 #from keras.preprocessing.image import img_to_array
 
+import glob
+files = glob.glob('static/uploads/*')
+for f in files:
+    os.remove(f)
+
+
 
 from img_model import load_model
 import logging
@@ -33,6 +39,7 @@ ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 
 MODEL_1 = 'models/text_model.save'
 MODEL_2 = 'models/image_model_saved.h5'
+
 
 
 MD5_dict = {}
@@ -144,4 +151,4 @@ def upload_file():
         result=result, score=str(round(pred*100,2)))
 
 if __name__ == '__main__': 
-   app.run(host="0.0.0.0", port=5000, debug=True)
+   app.run(host="0.0.0.0", port=5000)  #, debug=True
