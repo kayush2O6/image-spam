@@ -39,7 +39,9 @@ pip3 install -r requirements.txt
 
 python3.6 app.py 
 
-[http://localhost:5000/spam_buster/api/v1/model](http://localhost:5000/spam_buster/api/v1/model)
+Now, Open this link in your browser...  
+http://localhost:5000/spam_buster/api/v1/model
+
 ```
 
 #### Run within docker
@@ -59,7 +61,8 @@ cd /predict
 
 python3.6 app.py
 
-[http://localhost:5000/spam_buster/api/v1/model](http://localhost:5000/spam_buster/api/v1/model)
+Now, Open this link in your browser...  
+http://localhost:5000/spam_buster/api/v1/model
 ```
 
 ---
