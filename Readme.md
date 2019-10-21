@@ -53,8 +53,8 @@ Run the image and bash into it to start the server
 ```
 docker run --rm -itd \
  --name spam_buster \
- -v image-spam/predict:/predict 
- -p 5000:5000 
+ -v image-spam/predict:/predict \
+ -p 5000:5000 \
  kayush206/img_spam:v2 bash
 
 cd /predict
