@@ -33,9 +33,9 @@ We build a flask based micro-service which gives a "Spaminess score" for any upl
 Clone the repo and cd into predict folder
 
 ```
-cd predict
-
 pip3 install -r requirements.txt
+
+cd predict
 
 python3.6 app.py 
 
@@ -67,8 +67,10 @@ http://localhost:5000/spam_buster/api/v1/model
 
 ---
 
-Members
+Members:
 
-* [Mayur Madnani](https://github.com/mayurmadnani)
 * [Ayush Kumar](https://github.com/AK-ayush)
+* [Mayur Madnani](https://github.com/mayurmadnani)
 * [Shweta Pandey](https://github.com/bomila) 
+
+
